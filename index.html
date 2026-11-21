@@ -21,6 +21,9 @@
   .karta { background:var(--panel); border-radius:16px; padding:16px 18px; }
   .karta b { display:block; color:var(--oranz); margin-bottom:4px; }
   .snimky { display:flex; gap:14px; overflow-x:auto; padding-bottom:8px; scroll-snap-type:x mandatory; }
+  /* vystředění; při přetečení na úzkém displeji se pořád dá posouvat od začátku */
+  .snimky img:first-child { margin-left:auto; }
+  .snimky img:last-child { margin-right:auto; }
   .snimky img { width:230px; height:auto; border-radius:14px; flex:0 0 auto; scroll-snap-align:start; }
   .pozn { background:var(--panel); border-left:4px solid var(--oranz); border-radius:12px; padding:14px 18px; margin:0 0 36px; }
   .pozn b { color:var(--oranz); }
