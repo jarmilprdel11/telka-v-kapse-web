@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Telka v kapse</title>
-<meta name="description" content="Ovladač Google TV a Android TV v mobilu: touchpad, psaní, hlas a hledání rovnou v aplikacích.">
+<meta name="description" content="Ovladač Google TV a Android TV v mobilu: touchpad, psaní, Google Asistent a hledání rovnou v aplikacích.">
 <link rel="icon" href="obrazky/logo.png">
 <style>
   :root { --bg:#0e1118; --panel:#181c26; --text:#f6f0e2; --tlum:#a3a9b8; --oranz:#ff9a3c; }
@@ -22,6 +22,10 @@
   .karta b { display:block; color:var(--oranz); margin-bottom:4px; }
   .snimky { display:flex; gap:14px; overflow-x:auto; padding-bottom:8px; scroll-snap-type:x mandatory; }
   .snimky img { width:230px; height:auto; border-radius:14px; flex:0 0 auto; scroll-snap-align:start; }
+  .pozn { background:var(--panel); border-left:4px solid var(--oranz); border-radius:12px; padding:14px 18px; margin:0 0 36px; }
+  .pozn b { color:var(--oranz); }
+  h2 { font-size:24px; margin:40px 0 10px; }
+  ul { padding-left:22px; margin:0; }
   footer { margin-top:48px; color:var(--tlum); font-size:14px; }
   a { color:var(--oranz); }
 </style>
@@ -39,12 +43,20 @@
 
   <div class="karty">
     <div class="karta"><b>Touchpad nebo šipky</b>Přejeď prstem a kurzor na televizi se posune, ťukni a je to OK.</div>
-    <div class="karta"><b>Psaní a hlas</b>Piš klávesnicí mobilu nebo mluv – do jakéhokoli políčka na televizi.</div>
-    <div class="karta"><b>Hledání odkudkoli</b>Výsledky rovnou v YouTube, SmartTube, Streamletu nebo Nuviu.</div>
+    <div class="karta"><b>Mluv k televizi</b>Ťukni a řekni, co chceš – Google Asistent v televizi to vyhledá nebo udělá, jako s originálním ovladačem.</div>
+    <div class="karta"><b>Psaní z mobilu</b>Piš klávesnicí mobilu nebo diktuj – do jakéhokoli políčka na televizi.</div>
+    <div class="karta"><b>Hledání odkudkoli</b>Výsledky rovnou v YouTube, SmartTube, Streamletu, Nuviu nebo Stremiu.</div>
+    <div class="karta"><b>Spouštění aplikací</b>YouTube, Netflix, Stremio, SmartTube a další jedním ťuknutím.</div>
+    <div class="karta"><b>Hlasitost</b>S ukazatelem přímo z televize – i bočními tlačítky telefonu.</div>
     <div class="karta"><b>Zapnutí z mobilu</b>I z hlubokého spánku – přes Google Cast nebo Wake-on-LAN.</div>
     <div class="karta"><b>Spolehlivé spojení</b>Když síť zakolísá, ovladač se potichu připojí znovu a stisk se neztratí.</div>
     <div class="karta"><b>Bez reklam a účtů</b>Aplikace mluví jen s tvou televizí v domácí síti.</div>
   </div>
+
+  <div class="pozn"><b>Netflix, Disney+, HBO Max a spol.</b> – aplikace největších streamovacích gigantů si hlídají
+    vlastní pravidla, takže v nich ovládání pojede lehce omezeně. Spustit je jde a šipky, touchpad, přehrávání i hlasitost
+    fungují, ale mají vlastní klávesnici na obrazovce, do které psaní z mobilu nedosáhne, a hledání z Telky do nich rovnou
+    neskočí. Hledat v nich jde hlasem přes Asistenta v televizi.</div>
 
   <div class="snimky">
     <img src="obrazky/snimek-1.jpg" alt="Touchpad">
@@ -52,6 +64,15 @@
     <img src="obrazky/snimek-3.jpg" alt="Hledání hlasem">
     <img src="obrazky/snimek-4.jpg" alt="Hledání v aplikacích">
   </div>
+
+  <h2>Co potřebuješ</h2>
+  <ul>
+    <li>Televizi nebo krabičku s <b>Google TV nebo Android TV</b> – TCL, Sony, Philips, Hisense, Xiaomi, Chromecast s Google TV a další</li>
+    <li>Mobil s Androidem 8 nebo novějším</li>
+    <li>Mobil a televizi ve stejné domácí síti (jedno klidně na Wi-Fi, druhé na kabelu)</li>
+    <li>Pro mluvení k televizi zapnutého Google Asistenta (ne režim „pouze aplikace“)</li>
+  </ul>
+  <p style="color:var(--tlum)">Televize Samsung (Tizen) a LG (webOS) zatím podporované nejsou.</p>
 
   <footer>
     <p><a href="soukromi.html">Zásady ochrany soukromí / Privacy policy</a> · Kontakt: <a href="mailto:telka.v.kapse@gmail.com">telka.v.kapse@gmail.com</a></p>
