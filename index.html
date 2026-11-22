@@ -30,6 +30,14 @@
   .snimky img { width:230px; height:auto; border-radius:14px; flex:0 0 auto; scroll-snap-align:start; }
   .pozn { background:var(--panel); border-left:4px solid var(--oranz); border-radius:12px; padding:14px 18px; margin:0 0 36px; }
   .pozn b { color:var(--oranz); }
+  .napajeni { border-left-color:#ffcc33; }
+  .napajeni p { margin:8px 0; }
+  .napajeni .cesta { background:var(--bg); border-radius:10px; padding:10px 14px; font-size:16px; }
+  .napajeni .cesta span, .napajeni .mala { color:var(--tlum); font-size:14px; }
+  .napajeni table { width:100%; border-collapse:collapse; margin:10px 0 4px; font-size:15px; }
+  .napajeni th, .napajeni td { text-align:left; padding:6px 8px; border-bottom:1px solid rgba(128,128,128,.25); }
+  .napajeni .ano { color:#4cd08a; font-weight:600; } .napajeni .ne { color:#ff6b6b; font-weight:600; }
+
   h2 { font-size:24px; margin:40px 0 10px; }
   ul { padding-left:22px; margin:0; }
   footer { margin-top:48px; color:var(--tlum); font-size:14px; }
@@ -59,7 +67,7 @@
     <div class="karta"><b>Ovladač v oznámení</b>Hlasitost, ztlumení a pauza přímo z lišty oznámení – i na zamčené obrazovce, bez otevírání aplikace. Zapneš ho dlaždicí „Telka“ v rychlém nastavení.</div>
     <div class="karta"><b>Kanály jako na ovladači</b>Číselník pro klasické vysílání: čísla s potvrzením OK, kanál +/−, předchozí kanál, info o pořadu, seznam kanálů, titulky i hlasitost. Kdo ho nepotřebuje, v menu ho skryje.</div>
     <div class="karta"><b>Co je na televizi</b>Telka ukáže, která aplikace na televizi zrovna běží – a když to aplikace prozradí, i název videa a čas.</div>
-    <div class="karta"><b>Zapnutí z mobilu</b>Telka televizi zapne, i když hluboce spí (přes Google Cast nebo Wake-on-LAN). Podržením tlačítka vypnutí nabídne televize vypnutí nebo restart.</div>
+    <div class="karta"><b>Zapnutí z mobilu</b>Telka televizi zapne, i když hluboce spí (přes Google Cast nebo Wake-on-LAN). Podržením tlačítka vypnutí nabídne televize vypnutí nebo restart. <b>Pozor na režim napájení – viz níže.</b></div>
     <div class="karta"><b>Spolehlivé spojení</b>Když domácí síť zakolísá, Telka se během chvilky sama připojí znovu a žádné stisknutí se neztratí.</div>
     <div class="karta"><b>Bez reklam a účtů</b>Žádné sledování. Telka mluví jen s tvou televizí v domácí síti.</div>
   </div>
@@ -92,13 +100,24 @@
     „Open Netflix“, „Play Matrix on YouTube“, „Volume up“, „What's the weather?“. Stačí přepnout jazyk televize
     v Nastavení → Systém → Jazyk na English.</div>
 
+  <div class="pozn napajeni"><b>⚡ Důležité: aby šla televize zapnout z mobilu</b>
+    <p>Ve spánku se televize často úplně odpojí ze sítě – a pak ji nevzbudí nic, ani Telka. Stačí jedno nastavení v televizi:</p>
+    <p class="cesta">Nastavení → Systém → Napájení a energie → Energetický režim → <b>Zvýšený</b><br>
+      <span>(anglicky Increased, „vždy připojeno“)</span></p>
+    <table>
+      <tr><th></th><th>Zvýšený</th><th>Optimalizovaný</th></tr>
+      <tr><td>Televize na <b>kabelu</b></td><td class="ano">✓ zapne</td><td class="ne">✗ nezapne</td></tr>
+      <tr><td>Televize na <b>Wi-Fi</b></td><td class="ano">✓ zapne</td><td class="ano">✓ zapne (o chvilku pomaleji)</td></tr>
+    </table>
+    <p class="mala">Ve spánku pak televize bere o trochu víc proudu. Ověřeno na televizi TCL s Google TV, u jiných značek se názvy můžou mírně lišit.</p>
+  </div>
+
   <h2>Co potřebuješ</h2>
   <ul>
     <li>Televizi nebo krabičku s <b>Google TV nebo Android TV</b> – TCL, Sony, Philips, Hisense, Xiaomi, Chromecast s Google TV a další</li>
     <li>V televizi službu <b>Android TV Remote Service</b> ve verzi 5 nebo novější – verzi najdeš v televizi v Nastavení → Aplikace, aktualizace jde přes Obchod Play (nové televize ji mají vždy)</li>
     <li>Mobil s Androidem 8 nebo novějším</li>
     <li>Mobil a televizi ve stejné domácí síti (jedno klidně na Wi-Fi, druhé na kabelu)</li>
-    <li>Pro zapnutí televize z mobilu, hlavně když je na kabelu: v televizi <b>Nastavení → Systém → Napájení a energie → Energetický režim → Zvýšený</b> (Increased, „vždy připojeno“) – televize pak zůstane v síti i ve spánku</li>
     <li>Pro mluvení k televizi zapnutého Google Asistenta (ne režim „pouze aplikace“)</li>
   </ul>
   <p style="color:var(--tlum)">Televize Samsung (Tizen) a LG (webOS) zatím podporované nejsou.</p>
