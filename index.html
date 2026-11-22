@@ -18,6 +18,7 @@
   h1 { font-size:44px; line-height:1.1; margin:0; }
   .pod { color:var(--oranz); font-size:21px; margin:6px 0 0; }
   .ozn { display:block; width:100%; max-width:500px; margin:18px auto 30px; }
+  .ozn.kan { max-width:340px; border-radius:18px; }
   .slogan { font-size:17px; margin:8px 0 0; opacity:.85; }
   .karty { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:14px; margin:36px 0; }
   .karta { background:var(--panel); border-radius:16px; padding:16px 18px; }
@@ -56,7 +57,9 @@
     <div class="karta"><b>Hlasitost</b>Ovládáš ji tlačítky v aplikaci nebo bočními tlačítky telefonu. Aplikace ukazuje, jak nahlas televize právě hraje.</div>
     <div class="karta"><b>Makra</b>Jedno ťuknutí zapne televizi, otevře aplikaci a rovnou v ní vyhledá – třeba „Večer“: YouTube a pohádky. A „Dobrou noc“ televizi vypne.</div>
     <div class="karta"><b>Ovladač v oznámení</b>Hlasitost, ztlumení a pauza přímo z lišty oznámení – i na zamčené obrazovce, bez otevírání aplikace. Zapneš ho dlaždicí „Telka“ v rychlém nastavení.</div>
-    <div class="karta"><b>Zapnutí z mobilu</b>Telka televizi zapne, i když hluboce spí (přes Google Cast nebo Wake-on-LAN).</div>
+    <div class="karta"><b>Kanály jako na ovladači</b>Číselník pro klasické vysílání: čísla s potvrzením OK, kanál +/−, předchozí kanál, info o pořadu, seznam kanálů, titulky i hlasitost. Kdo ho nepotřebuje, v menu ho skryje.</div>
+    <div class="karta"><b>Co je na televizi</b>Telka ukáže, která aplikace na televizi zrovna běží – a když to aplikace prozradí, i název videa a čas.</div>
+    <div class="karta"><b>Zapnutí z mobilu</b>Telka televizi zapne, i když hluboce spí (přes Google Cast nebo Wake-on-LAN). Podržením tlačítka vypnutí nabídne televize vypnutí nebo restart.</div>
     <div class="karta"><b>Spolehlivé spojení</b>Když domácí síť zakolísá, Telka se během chvilky sama připojí znovu a žádné stisknutí se neztratí.</div>
     <div class="karta"><b>Bez reklam a účtů</b>Žádné sledování. Telka mluví jen s tvou televizí v domácí síti.</div>
   </div>
@@ -76,6 +79,12 @@
   <p>Hlasitost, ztlumení a pauza rovnou z lišty oznámení – i na zamčené obrazovce, bez otevírání aplikace.
     Zapneš ho dlaždicí <b>Telka</b> v rychlém nastavení (nebo v aplikaci v menu televize).</p>
   <img class="ozn" src="obrazky/ovladac-v-oznameni.png" alt="Ovladač Telky v liště oznámení a dlaždice Telka v rychlém nastavení">
+
+  <h2>Kanály jako na ovladači</h2>
+  <p>Pro ty, kdo koukají na anténu, kabel nebo IPTV s čísly kanálů. Ťukneš na <b>123</b> vedle touchpadu, vyťukáš číslo
+    a <b>OK</b> přepne hned – bez čekání. <b>Předchozí</b> tě vrátí na kanál, kde jsi byl před tím, a nahoře vidíš, co právě píšeš.
+    Boční tlačítka hlasitosti telefonu fungují i tady.</p>
+  <img class="ozn kan" src="obrazky/kanaly.jpg" alt="Číselník kanálů v Telce">
 
   <div class="pozn"><b>Google Asistent a čeština</b> – Telka předá tvůj hlas Asistentovi v televizi a ten pak
     rozhoduje, co umí. <b>Česky</b> zvládne jen jednoduché hledání (název filmu, videa, herce); příkazy jako spuštění
